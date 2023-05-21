@@ -26,6 +26,7 @@ Create a JSON response in Laravel with the following data:
     }
 }
 #### Answer:  
+   ```
    return response()->json([
     	  	'message' => 'Success',
     		  'data' => [
@@ -33,6 +34,7 @@ Create a JSON response in Laravel with the following data:
         		'age' => 25
     		]
    ]);
+   ```
 #
 
 Question 5:
