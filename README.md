@@ -71,4 +71,4 @@ Create a route in Laravel that handles a POST request to the '/submit' URL. Insi
 #
 
 ## Submission Instruction :
-#### Github repository link: [Click here] (https://github.com/mahmudcdh/OstadAssignment_Module14.git)
+#### Github repository link: [Click here](https://github.com/mahmudcdh/OstadAssignment_Module14.git)
