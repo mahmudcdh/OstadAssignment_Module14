@@ -38,7 +38,8 @@ Create a JSON response in Laravel with the following data:
 Question 5:
 You are implementing a file upload feature in your Laravel application. Write the code to handle a file upload named 'avatar' in the current request and store the uploaded file in the 'public/uploads' directory. Use the original filename for the uploaded file.
 
-#### Answer: if ($request->hasFile('avatar')) {
+#### Answer: 
+  if ($request->hasFile('avatar')) {
     		$file = $request->file('avatar');
     		$fileName = $file->getClientOriginalName();
     		$file->move(public_path('uploads'), $fileName);
