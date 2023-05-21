@@ -3,14 +3,17 @@
 Question 1:
 You have a Laravel application with a form that submits user information using a POST request. Write the code to retrieve the 'name' input field value from the request and store it in a variable called $name.
 #### Answer:  
-```bash
+```
 $name = $request->input('name');
 ```
 #
  
 Question 2:
 In your Laravel application, you want to retrieve the value of the 'User-Agent' header from the current request. Write the code to accomplish this and store the value in a variable called $userAgent.
-#### Answer: $userAgent = $request->header('User-Agent');
+#### Answer: 
+```
+$userAgent = $request->header('User-Agent');
+```
 #
 
 Question 3:
