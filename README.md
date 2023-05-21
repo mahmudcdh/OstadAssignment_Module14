@@ -13,7 +13,8 @@ In your Laravel application, you want to retrieve the value of the 'User-Agent' 
 Question 3:
 You are building an API endpoint in Laravel that accepts a GET request with a 'page' query parameter. Write the code to retrieve the value of the 'page' parameter from the current request and store it in a variable called $page. If the parameter is not present, set $page to null.
 #### Answer: $page = $request->query('page', null);
- 
+#
+
 Question 4:
 Create a JSON response in Laravel with the following data:
  
@@ -24,7 +25,7 @@ Create a JSON response in Laravel with the following data:
         "age": 25
     }
 }
-# Answer:  
+#### Answer:  
    return response()->json([
     	  	'message' => 'Success',
     		  'data' => [
@@ -32,21 +33,24 @@ Create a JSON response in Laravel with the following data:
         		'age' => 25
     		]
    ]);
+#
 
 Question 5:
 You are implementing a file upload feature in your Laravel application. Write the code to handle a file upload named 'avatar' in the current request and store the uploaded file in the 'public/uploads' directory. Use the original filename for the uploaded file.
 
-# Answer: if ($request->hasFile('avatar')) {
+#### Answer: if ($request->hasFile('avatar')) {
     		$file = $request->file('avatar');
     		$fileName = $file->getClientOriginalName();
     		$file->move(public_path('uploads'), $fileName);
   }
- 
+#
+
 Question 6:
 Retrieve the value of the 'remember_token' cookie from the current request in Laravel and store it in a variable called $rememberToken. If the cookie is not present, set $rememberToken to null.
 
-# Answer: $rememberToken = $request->cookie('remember_token', null);
- 
+#### Answer: $rememberToken = $request->cookie('remember_token', null);
+#
+
 Question 7:
 Create a route in Laravel that handles a POST request to the '/submit' URL. Inside the route closure, retrieve the 'email' input parameter from the request and store it in a variable called $email. Return a JSON response with the following data:
 {
@@ -54,7 +58,8 @@ Create a route in Laravel that handles a POST request to the '/submit' URL. Insi
     "message": "Form submitted successfully."
 }
 
-# Answer: Route::post('/submit', function (Request $request) {
+#### Answer: 
+  Route::post('/submit', function (Request $request) {
     		$email = $request->input('email');
 
     		return response()->json([
@@ -62,6 +67,7 @@ Create a route in Laravel that handles a POST request to the '/submit' URL. Insi
         			'message' => 'Form submitted successfully.'
     		]);
   });
+#
 
-# Submission Instruction :
-# Github repository link: https://github.com/mahmudcdh/OstadAssignment_Module14.git
+## Submission Instruction :
+#### Github repository link: https://github.com/mahmudcdh/OstadAssignment_Module14.git
