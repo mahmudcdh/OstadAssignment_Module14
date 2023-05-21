@@ -24,9 +24,10 @@ Create a JSON response in Laravel with the following data:
         "age": 25
     }
 }
-# Answer:  return response()->json([
+# Answer:  
+   return response()->json([
     	  	'message' => 'Success',
-    		'data' => [
+    		  'data' => [
         		'name' => 'John Doe',
         		'age' => 25
     		]
